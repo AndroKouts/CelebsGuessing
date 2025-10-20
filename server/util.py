@@ -25,7 +25,12 @@ def classify_image(image_base64_data, file_path = None):
         len_image_array = 32 * 32 * 3 + 32 * 32
         final = combined_img.reshape(1, len_image_array).astype(float)
 
-        result.append(__model.predict(final)[0])
+        result.append({
+            "class" : class_number_to_name(__model.predict(final)[0]),
+            "class_probability" : np.round(__model.predict_proba(final) * 100,2).tolist()[0],
+            "class_dictionary" : __class_name_to_number
+        })
+
     return result
 
 def load_saved_artifacts():
@@ -78,6 +83,12 @@ def get_b64_millie():
     with open("b64.txt") as f:
         return f.read()
 
+def class_number_to_name(class_num):
+    return __class_number_to_name[class_num]
+
 if __name__ == '__main__':
     load_saved_artifacts()
-    print(classify_image(get_b64_millie(), None))
+    print(classify_image(None, "./test images/chalamettest1.jpg"))
+    print(classify_image(None, "./test images/Blonde Curly Hair in LEGO Short Film.jpg"))
+    print(classify_image(None, "./test images/millie.jpg"))
+    print(classify_image(None, "./test images/millie2.jpg"))

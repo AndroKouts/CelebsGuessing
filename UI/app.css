@@ -1,11 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:wght@400;600&display=swap');
+
+.container.mt-4 {
+    margin-top: 1rem; /* reduce top margin */
+}
+
+.custom-navbar {
+    background-color: #007BFF;  /* Blue */
+}
+
+.custom-navbar .navbar-brand {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.info-block {
+    background-color: #e3f2fd; /* light blue background */
+    border: 1px solid #007BFF; /* blue border */
+    font-family: 'Poppins', sans-serif;
+}
+
+.info-title {
+    color: #007BFF; /* blue heading */
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.info-text {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
 .card-wrapper {
-    margin: 5% 0;
+    margin: 3% 0;
   }
   
 /* You can adjust the image size by increasing/decreasing the width, height */
 .custom-circle-image {
-  width: 10vw; /* note i used vw not px for better responsive */
-  height: 10vw;
+  width: 8vw; /* note i used vw not px for better responsive */
+  height: 8vw;
 }
 
 .custom-circle-image img {
@@ -13,12 +47,14 @@
 }
 
 .card-title {
-  letter-spacing: 1.1px;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    letter-spacing: 1.1px;
 }
 
 .card-text {
-  font-family: MerriweatherRegular;
-  font-size: 22px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
   line-height: initial;
 }
 
@@ -28,12 +64,29 @@
 
 
 .error {
-  font-family: MerriweatherRegular;
-  font-size: 30px;
+  font-family: 'Merriweather', serif;
+  font-size: 28px;
   line-height: initial;
   color: blue;
   text-align: center;
 }
+
+#submitBtn {
+  background-color: #007BFF;  /* Blue */
+  color: white;                /* Text color */
+  border: none;                /* Remove default border */
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#submitBtn:hover {
+  background-color: #0056b3;  /* Darker blue on hover */
+}
+
 
 #classTable {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
@@ -50,6 +103,6 @@
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #4CAF50;
+  background-color: #007BFF;
   color: white;
 }

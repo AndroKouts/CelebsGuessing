@@ -1,3 +1,5 @@
+![Demo of CelebGuessing](images_dataset/demo_of_website.png)
+
 # 🧠 Celebrity Classification using Machine Learning
 
 This project focuses on building an **image classification model** that can recognize and classify famous **acting personalities** using machine learning techniques.

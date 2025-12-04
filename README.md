@@ -1,8 +1,10 @@
-![Demo of CelebGuessing](images_dataset/demo_of_website.png)
-
 # 🧠 Celebrity Classification using Machine Learning
 
-This project focuses on building an **image classification model** that can recognize and classify famous **acting personalities** using machine learning techniques.
+![Demo of CelebGuessing](images_dataset/demo_of_website.png)
+
+### An end-to-end machine learning project for recognizing famous acting personalities.
+
+This project focuses on building an **image classification model** that can recognize and classify well-known **actors and actresses** using machine learning techniques.
 
 ---
 
@@ -20,53 +22,53 @@ The model is trained to identify the following five actors:
 
 ## 📁 Project Structure
 
-- UI : This contains UI website code
-- server: Python flask server
-- model: Contains python notebook for model building
-- images_dataset: Dataset used for our model training
+- **UI** – Frontend website code  
+- **server** – Python Flask backend  
+- **model** – Jupyter notebook for model building  
+- **images_dataset** – Dataset used for training  
 
 ---
 
 ## ⚙️ Technologies and Tools Used
 
-- **Python** – Core language for development  
-- **NumPy** & **OpenCV** – Data preprocessing and image cleaning  
-- **Matplotlib** & **Seaborn** – Data visualization and analysis  
-- **Scikit-learn (sklearn)** – Model building and evaluation  
-- **Flask** – Backend web framework for serving the model  
-- **HTML**, **CSS**, **JavaScript** – Frontend for the user interface  
-- **Jupyter Notebook**, **VS Code**, **PyCharm** – IDEs for coding and experimentation  
+- **Python** – Core development language  
+- **NumPy**, **OpenCV** – Data preprocessing and image cleaning  
+- **Matplotlib**, **Seaborn** – Visualization and analysis  
+- **Scikit-learn (sklearn)** – Model training and evaluation  
+- **Flask** – Backend server for deployment  
+- **HTML**, **CSS**, **JavaScript** – Web UI  
+- **Jupyter Notebook**, **VS Code**, **PyCharm** – IDEs used in development  
 
 ---
 
 ## 🚀 How It Works
 
-1. **Image Collection** – Images of the five athletes are gathered using Google Image Scraping scripts.  
-2. **Data Preprocessing** – The images are cleaned, resized, and processed using OpenCV and NumPy.  
-3. **Model Training** – A machine learning model is trained with Scikit-learn to classify the images.  
-4. **Model Deployment** – The trained model is deployed using Flask as a backend server.  
-5. **User Interface** – The frontend UI allows users to upload an image and see predictions in real time.
+1. **Image Collection** – Images of the five actors are gathered using Google Image Scraping scripts.  
+2. **Data Preprocessing** – Images are cleaned, resized, and processed with OpenCV and NumPy.  
+3. **Model Training** – A machine learning model is trained using Scikit-learn.  
+4. **Model Deployment** – The trained model is deployed via Flask.  
+5. **User Interface** – A web-based UI lets users upload images and receive predictions in real time.
 
 ---
 
 ## 💡 Key Features
 
-- End-to-end ML pipeline: data collection → training → deployment  
-- Image-based classification of five sports celebrities  
-- Integration of machine learning with a web application  
-- Educational, lightweight, and easy to extend  
+- Complete ML pipeline: data collection → training → deployment  
+- Image-based celebrity classification  
+- Fully integrated web application  
+- Lightweight and easy to extend for learning or prototyping  
 
 ---
 
 ## 🧩 Future Improvements
 
-- Use deep learning (CNNs) with TensorFlow or PyTorch for better accuracy  
-- Increase dataset size and variety  
+- Switch to deep learning (CNNs) with TensorFlow or PyTorch  
+- Expand dataset size for better accuracy  
 - Add more acting personalities  
-- Improve UI for a more interactive experience  
+- Improve UI experience and feedback  
 
 ---
 
 ## 📚 Author
 
-Developed as a hands-on **Data Science and Machine Learning** project demonstrating how image classification can be integrated with a Flask-based web interface for real-world applications.
+Developed as a hands-on **Data Science and Machine Learning** project demonstrating how image classification can be integrated with a Flask-powered web interface for real-world use.
